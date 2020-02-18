@@ -1,0 +1,39 @@
+mkdir -p hello/five/six/seven hello/one/two/three/four
+
+cd hello/five/six
+
+touch c.txt
+
+cd seven
+
+touch error.log
+
+cd ../../..
+
+cd one
+
+touch a.txt b.txt
+
+cd two 
+
+touch d.txt
+
+cd three
+
+touch e.txt
+
+cd four
+
+touch access.log
+
+cd ../../../..
+
+find . -name '*.log' -delete
+
+cd one
+
+vi a.txt
+
+cd ..
+
+rm -rf five
