@@ -1,0 +1,47 @@
+$ mkdir git_sample_project
+
+$ cd git_sample_project/
+
+$ git init
+
+$ touch a.txt b.txt c.txt
+
+$ vi a.txt
+
+$ vi b.txt
+
+$ vi c.txt
+
+$ git add a.txt b.txt
+
+$ git status
+
+$ git commit -m "add a.txt and b.txt"
+
+$ git status
+
+$ git log
+
+$ git add c.txt
+
+$ git commit 
+
+$ git remote add origin git@gitlab.com:suryakantkumar/git_sample_project.git
+
+$ git push -u origin --all
+
+$ git clone https://gitlab.com/suryakantkumar/git_sample_project.git git_sample_project_2
+
+$ cd git_sample_project_2
+
+$ touch d.txt
+
+$ git add d.txt
+
+$ git commit
+
+$ git push -u origin master
+
+$ cd git_sample_project
+
+$ git pull
